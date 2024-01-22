@@ -1,14 +1,34 @@
 package EjerciciosParaRefactorizar;
 
-import java.util.Scanner;
+public static void main(String[] args) {
+	
+	Scanner sc = new Scanner(System.in);
+	
+	System.out.println("Dime un caracter(pulse z para salir): ");
+	char caracter = sc.next().charAt(0);
+	
+	contador(caracter);
+	
+	
 
-public class Ejercicio5 {
-public static void main(String[] args) { Scanner sc = new Scanner(System.in); System.out.println("Dime un carácter(pulse z para salir): ");
-char caracterintroducido = sc.next().charAt(0);
-int contadordevocales = 0;
-while( caracterintroducido != 'z' ) { if ((caracterintroducido == 'a')|| (caracterintroducido == 'e') || (caracterintroducido == 'i')|| (caracterintroducido == 'o') || (caracterintroducido == 'u'))
-contadordevocales ++;
-System.out.println("Dime otro carácter(pulse z para salir): ");
-caracterintroducido = sc.next().charAt(0);}
-System.out.println("Se han contado " + contadordevocales + " vocales.");sc.close();
-}}
+}
+
+public static void contador(char caracter) {
+	
+	Scanner sc = new Scanner(System.in);
+	
+	final char pararBucle = 'z';
+	
+	int contadorDeVocales = 0;
+	while (caracter != pararBucle) {
+		
+		if ((caracter == 'a') || (caracter == 'e') || (caracter == 'i') || (caracter == 'o') || (caracter == 'u'))
+			contadorDeVocales++;
+		
+		System.out.println("Dime otro carï¿½cter(pulse z para salir): ");
+		caracter = sc.next().charAt(0);
+	}
+	System.out.println("Se han contado " + contadorDeVocales + " vocales.");
+	sc.close();
+}
+}

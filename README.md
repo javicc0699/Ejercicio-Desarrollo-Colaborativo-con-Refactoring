@@ -8,3 +8,13 @@ Diseñe un algoritmo que determine el precio a pagar por el alquiler de un vehí
 #3. Escribir una aplicación que solicite al usuario cuántos números desea introducir. A continuación, se introducirá por teclado esa cantidad de números enteros, y por último, los mostrará en el orden inverso al introducido.
 #4.Diseñar un programa que solicite al usuario una frase y una palabra. A continuaciónbuscará cuántas veces aparece la palabra en la frase.
 #5.Algoritmo que lea caracteres hasta que el carácter leído sea una Z y nos muestre elnúmero de caracteres leídos que son vocales.
+
+
+REFACTORIZACION DE JAVI:
+
+Ejercicio 2:
+
+He corregido los margenes en todo el documento. Además he puesto nombres de variables mas cortos e intuitivos, ya que los anteriores eran demasiado largos. También he modificado la variable del bucle for para que se llame indice.
+
+Ejercicio 5:
+He corregido las tabulaciones del archivos y he modificado los nombres de las variables. He anadido una constante llamada pararBucle que equivale a Z para que el bucle termine. He creado un metodo en el que he introducido el contador de vocales para que este mas modularizado.

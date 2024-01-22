@@ -4,20 +4,37 @@ import java.util.Scanner;
 
 public class Ejercicio2 {
 	
-public static String numComprendidos(int n1, int n2) {
-String numeroscomprendidos = ""; for (int i = n1; i<= n2; i++) { numeroscomprendidos = numeroscomprendidos + " " + i;
-}return numeroscomprendidos;}
-public static void main(String[] args) {
-var sc = new Scanner(System.in);
-System.out.println("Introduce un número: ");
-int primernumero = sc.nextInt();
-System.out.println("Introduce un número mayor al anterior: ");
-int segundonumero = sc.nextInt();
-if(segundonumero < primernumero){System.out.println("Error. Introduce un número mayor al anterior: ");
-segundonumero = sc.nextInt();
-}System.out.println("Los números comprendidos entre " + primernumero + "y" + segundonumero + " son " + numComprendidos(primernumero,segundonumero));
-sc.close();
-	}}
-
+	public static void main(String[] args) {
+		
+		var sc = new Scanner(System.in);
+		
+		System.out.println("Introduce un numero: ");
+		int n1 = sc.nextInt();
+		
+		System.out.println("Introduce un nï¿½mero mayor al anterior: ");
+		int n2 = sc.nextInt();
+		
+		if (n2 < n1) {
+			System.out.println("Error. Introduce un nï¿½mero mayor al anterior: ");
+			n2 = sc.nextInt();
+		}
+		
+		System.out.println("Los nï¿½meros comprendidos entre " + n1 + "y" + n2 + " son " + listadoNumeros(n1, n2));
+		
+		sc.close();
+	}
+	
+	public static String listadoNumeros(int n1, int n2) {
+		
+		String listadoDeNumeros = "";
+		
+		for (int indice = n1; indice <= n2; indice++) {
+			
+			listadoDeNumeros = listadoDeNumeros + " " + indice;
+		}
+		
+		return listadoDeNumeros;
+	}
+}
 
 
